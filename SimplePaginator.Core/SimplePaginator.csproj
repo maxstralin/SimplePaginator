@@ -6,8 +6,14 @@
     <LangVersion>8.0</LangVersion>
     <AssemblyName>SimplePaginator</AssemblyName>
     <Authors>Max Strålin</Authors>
-    <Product />
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>A very simple pagination library that takes an IQueryable&lt;T&gt; and returns a paginated result. Can be used both as extension methods or through DI.
+
+For MongoDb, install SimplePagination.MongoDb, which enables better pagination for IMongoQueryable&lt;T&gt;.</Description>
+    <ApplicationIcon>undraw_selection_92i4.ico</ApplicationIcon>
+    <Copyright>Max Strålin, 2020</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
