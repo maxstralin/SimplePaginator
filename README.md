@@ -18,7 +18,7 @@ Have a look at the tests for more examples.
 ```csharp
 var source = Enumerable.Range(1,100).AsQueryable();
 
-//Returns an IPaginationResult with the first 15 entries, where the page count is calculated using LINQ's count() function 
+//Returns an IPaginationResult with the first 15 entries, where the entry count (and in turn, the page count) is calculated using LINQ's count() function 
 IPaginationResult paginated = source.Paginate(page: 1, pageSize: 15);
 //paginated.Page == 1
 //paginated.PageCount == 7
@@ -30,7 +30,7 @@ Use a custom count function for returning number of entries. The idea is to use 
 ```csharp
 var source = Enumerable.Range(1,100).AsQueryable();
 
-//Returns an IPaginationResult with the first 15 entries, where the page count is calculated using a custom function.
+//Returns an IPaginationResult with the first 15 entries, where the entry count (and in turn, the page count) is calculated using a custom function.
 IPaginationResult paginated = source.Paginate(page: 1, pageSize: 15, (q) => 50);
 //paginated.Page == 1
 //paginated.PageCount == 4
@@ -40,7 +40,7 @@ IPaginationResult paginated = source.Paginate(page: 1, pageSize: 15, (q) => 50);
 
 You can also use an async custom function
 ```csharp
-//Returns an IPaginationResult with the first 15 entries, where the page count is calculated using a custom async function.
+//Returns an IPaginationResult with the first 15 entries, where the entry count (and in turn, the page count) is calculated using a custom async function.
 IPaginationResult paginated = await source.PaginateAsync(page: 1, pageSize: 15, (q) => Task.FromResult(50));
 //paginated.Page == 1
 //paginated.PageCount == 4
@@ -60,7 +60,7 @@ services.AddSimplePaginator();
 public void Example(IPaginationService pagination) {
  var source = Enumerable.Range(1,100).AsQueryable();
 
- //Returns an IPaginationResult with the first 15 entries, where the page count is calculated using LINQ's count() function 
+ //Returns an IPaginationResult with the first 15 entries, where the entry count (and in turn, the page count) is calculated using LINQ's count() function 
  IPaginationResult paginated = pagination.Paginate(query: source, page: 1, pageSize: 15);
  //paginated.Page == 1
  //paginated.PageCount == 7
