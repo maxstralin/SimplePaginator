@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplePaginator", "SimplePaginator.Core\SimplePaginator.csproj", "{49DF6552-FD68-49C6-9C8C-CCD2226AB06B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimplePaginator.Tests", "SimplePaginator.Tests\SimplePaginator.Tests.csproj", "{81EDA4C8-BBB9-41DF-B8A0-FE2E15226577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49DF6552-FD68-49C6-9C8C-CCD2226AB06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DF6552-FD68-49C6-9C8C-CCD2226AB06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DF6552-FD68-49C6-9C8C-CCD2226AB06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DF6552-FD68-49C6-9C8C-CCD2226AB06B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EDA4C8-BBB9-41DF-B8A0-FE2E15226577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EDA4C8-BBB9-41DF-B8A0-FE2E15226577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EDA4C8-BBB9-41DF-B8A0-FE2E15226577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EDA4C8-BBB9-41DF-B8A0-FE2E15226577}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44AFD7DB-22BC-4125-9143-186F148ECDCB}
+	EndGlobalSection
+EndGlobal
