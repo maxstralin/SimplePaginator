@@ -6,10 +6,9 @@ For MongoDb, install `SimplePagination.MongoDb`, which enables better pagination
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
+Use Visual Studio Package Manager or 
 ```bash
-pip install foobar
+Install-Package SimplePaginator
 ```
 
 ## Usage
@@ -50,7 +49,7 @@ IPaginationResult paginated = await source.PaginateAsync(page: 1, pageSize: 15, 
 ```
 
 ### Dependency injection
-Behind the scenes, the default service simply calls the extensions methods.  
+Behind the scenes, the default service simply calls the extensions methods so there's no practical difference.  
 **Startup.cs**
 ```csharp
 services.AddSimplePaginator(); 
